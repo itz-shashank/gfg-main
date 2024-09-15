@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Transaction data (without manually assigned IDs)
+
 const transactions = [
   { date: '2024-09-01', amount: '₹200.00', status: 'Credited' },
   { date: '2024-09-02', amount: '₹150.00', status: 'Debited' },
@@ -35,16 +35,16 @@ const transactions = [
   { date: '2024-10-01', amount: '₹440.00', status: 'Credited' },
 ];
 
-// Helper function to calculate totals
+
 const calculateTotal = (transactions, status) => {
   return transactions
     .filter(transaction => transaction.status === status)
     .reduce((total, transaction) => total + parseFloat(transaction.amount.replace('₹', '')), 0);
 };
 
-// Generate unique ID using Math.random()
+
 const generateId = () => {
-  return Math.random().toString(36).substr(2, 9); // Generates a random 9-character string
+  return Math.random().toString(36).substr(2, 9); 
 };
 
 const TransactionHistory = () => {

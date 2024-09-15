@@ -8,9 +8,11 @@ import ExpenseComponent from "./components/Expense/ExpenseComponent";
 
 function App() {
   const data = {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
-    Expense: [650, 590, 800, 810, 560, 550, 400],
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    Expense: [5000, 3000, 4000, 4500, 3500, 6000, 7000, 6500, 5000, 5500, 6000, 4500], // Example expense data for each month
+    Earnings: [10000, 12000, 11000, 14000, 13500, 7000, 16000, 5500, 14000, 14500, 15000, 14000], // Example earnings data for each month
   };
+  
 
 
 
